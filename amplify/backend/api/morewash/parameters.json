@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "morewash",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authmorewash5d06eed95d06eed9",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
