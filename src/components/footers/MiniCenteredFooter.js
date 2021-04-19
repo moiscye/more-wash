@@ -78,8 +78,9 @@ export default ({ id = "" }) => {
           <AboutCompanyContainer>
             <AboutCompany>
               ShinyTruck provides professional mobile truckwash in Melbourne.
-              Our mobile truckwash service operates 24/7 so you can enjoy a
-              Shiny Truck and therefore enhancing your business brand.
+              Our mobile truckwash service operates 24/7 so you can have a
+              ShinyTruck{" "}
+              <span tw="font-bold text-primary-600">Wherever, Whenever.</span>
             </AboutCompany>
           </AboutCompanyContainer>
           <SocialLinksContainer>
@@ -111,7 +112,7 @@ export default ({ id = "" }) => {
 
           <CopyrightText>
             Copyright ShinyTruck {new Date().getFullYear()}. &copy; All rights
-            reserved
+            reserved.
           </CopyrightText>
         </Row>
       </Content>

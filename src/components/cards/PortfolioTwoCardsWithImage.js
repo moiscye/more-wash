@@ -6,7 +6,7 @@ import { SectionHeading, Subheading } from "components/misc/Headings.js";
 import { PrimaryLink as PrimaryLinkBase } from "components/misc/Links.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
-import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
+import { ReactComponent as IdeaIcon } from "images/info.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
 import truckExterior from "images/truckExterior.jpg";
 import truckInterior from "images/truckInterior.jpg";
@@ -67,14 +67,13 @@ export default ({
   linkText = "View all Services",
   cardLinkText = "Read More",
   textOnLeft = false,
-}) => {
-  const cards = [
+  cards = [
     {
       imageSrc: truckExterior,
       company: "Exterior Cleaning",
       type: "Melbourne",
       title: "Your vehicle will be presented in pristine condition",
-      durationText: "Save your valuable time",
+      durationText: "We'll Make You Stand Out!",
       locationText: "Mobile wash",
     },
     {
@@ -82,10 +81,11 @@ export default ({
       company: "Interior Cleaning",
       type: "Melbourne",
       title: "Spotless and with the highest hygiene standards",
-      durationText: "Save your valuable time",
+      durationText: "Save your valuable time!",
       locationText: "Mobile wash",
     },
-  ];
+  ],
+}) => {
   return (
     <Container>
       <Content>
@@ -107,16 +107,12 @@ export default ({
                 <CardText>
                   <CardHeader>
                     <CardCompany>{card.company}</CardCompany>
-                    {/* <CardType>{card.type}</CardType> */}
                   </CardHeader>
                   <CardTitle>{card.title}</CardTitle>
                   <CardMeta>
                     <CardMetaFeature>
-                      <TimeIcon /> {card.durationText}
+                      <IdeaIcon /> {card.durationText}
                     </CardMetaFeature>
-                    {/* <CardMetaFeature>
-                      <LocationIcon /> {card.locationText}
-                    </CardMetaFeature> */}
                   </CardMeta>
                   <CardAction>{cardLinkText}</CardAction>
                 </CardText>

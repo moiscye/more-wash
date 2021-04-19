@@ -84,13 +84,6 @@ export default ({
       title: "Your vehicle will be presented in pristine condition",
       durationText: "Save your valuable time",
     },
-    {
-      imageSrc: truckExterior,
-      company: "Exterior Cleaning",
-      type: "Melbourne",
-      title: "Your vehicle will be presented in pristine condition",
-      durationText: "Save your valuable time",
-    },
   ];
   return (
     <Container>

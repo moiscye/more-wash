@@ -5,9 +5,15 @@ import tw from "twin.macro";
  */
 import { motion } from "framer-motion";
 import useInView from "use-in-view";
+import styled from "styled-components";
 
-// const StyledDiv = tw.div`font-display min-h-screen text-secondary-500 p-4 md:p-8 mt-16 overflow-hidden `;
-const StyledDiv = tw.div`font-display min-h-screen text-secondary-500 p-8 pb-0 overflow-hidden `;
+const StyledDiv = styled.div(({ offsetTop = false, noPadding = false }) => [
+  tw`font-display min-h-screen text-secondary-500 p-8 pb-0 overflow-hidden`,
+  `margin-top: ${offsetTop ? 68 : 0}px;
+  padding:${noPadding && 0};
+  `,
+  // `padding-top: 2px`,
+]);
 function AnimationReveal({ disabled, children }) {
   if (disabled) {
     return <>{children}</>;
@@ -59,7 +65,7 @@ function AnimatedSlideInComponent({
 }
 
 export default (props) => (
-  <StyledDiv>
+  <StyledDiv {...props}>
     <AnimationReveal {...props} />
   </StyledDiv>
 );

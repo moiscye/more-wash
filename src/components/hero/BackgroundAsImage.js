@@ -51,7 +51,7 @@ export default () => {
       <HeroContainer>
         <TwoColumn>
           <LeftColumn>
-            <Notification>We come to you</Notification>
+            <Notification>We come to you!</Notification>
             <Heading>
               <span>Professional Mobile</span>
               <br />

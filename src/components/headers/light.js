@@ -87,12 +87,20 @@ export default ({
       <NavLink to="/bookings" tw="lg:mr-12!">
         Bookings
       </NavLink>
-      {/* <NavLink to="/#" tw="lg:ml-12!">
-        Login
-      </NavLink> */}
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} to="/admin">
-        Login
-      </PrimaryLink>
+      <SecondaryLink
+        as="a"
+        href="tel:0451541852"
+        tw="lg:ml-12!"
+        onClick={() =>
+          ReactGA.event({
+            category: "Phone click",
+            action: "Top Menu",
+          })
+        }
+      >
+        <PhoneIcon />
+        0451-541-852
+      </SecondaryLink>
     </NavLinks>,
   ];
 
@@ -124,16 +132,16 @@ export default ({
           {logoLink}
           <CenterPhoneLink
             as="a"
-            href="tel:2224362510"
+            href="tel:0451541852"
             onClick={() =>
               ReactGA.event({
-                category: "telefono click",
+                category: "Phone click",
                 action: "Top Menu Tablet",
               })
             }
           >
             <PhoneIcon />
-            222-436-2510
+            0451-541-852
           </CenterPhoneLink>
           <MobileNavLinks
             initial={{ x: "150%", display: "none" }}
