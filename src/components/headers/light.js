@@ -81,7 +81,7 @@ export default ({
   const defaultLinks = [
     <NavLinks key={1}>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
+      <NavLink to="/about">About Us</NavLink>
       <NavLink to="/services">Services</NavLink>
       <NavLink to="/contact">Contact Us</NavLink>
       <NavLink to="/bookings" tw="lg:mr-12!">

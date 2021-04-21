@@ -44,7 +44,7 @@ export default ({ id = "" }) => {
           </LogoContainer>
           <LinksContainer>
             <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+            <Link to="/about">About Us</Link>
             <Link to="/services">Services</Link>
             <Link to="/contact">Contact Us</Link>
             <Link to="/bookings">Bookings</Link>

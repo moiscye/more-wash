@@ -3,13 +3,17 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading } from "components/misc/Headings.js";
-import { PrimaryLink as PrimaryLinkBase } from "components/misc/Links.js";
+import { Link } from "react-router-dom";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 import { ReactComponent as IdeaIcon } from "images/info.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
 import truckExterior from "images/truckExterior.jpg";
 import truckInterior from "images/truckInterior.jpg";
+
+export const PrimaryLinkBase = tw(
+  Link
+)`cursor-pointer font-bold text-primary-500 border-b-2 border-transparent hocus:border-primary-500 hocus:text-primary-800 transition duration-300`;
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
@@ -60,11 +64,12 @@ export default ({
   subheading = "Our Services",
   headingHtmlComponent = (
     <>
-      <span tw="text-primary-500">Exterior & Interior</span> cleaning!
+      <span tw="text-primary-500">Hand-Wash</span> cleaning!
     </>
   ),
-  description = "Our experienced team members will make your vehicle shine inside out. Attention to detail is our way of saying thank you for your business.",
-  linkText = "View all Services",
+  description = "Due to the amount of brake dust and road grime build-up, trucks of all sizes need various cleaning techniques. You can keep your truck rust-free and clean by scheduling detailing appointments on a regular basis, which is important because you spend so much time in it. We thoroughly clean the truck's interiors to insure that it is a comfortable place to sit and drive.",
+  linkText = "See all services",
+  linkUrl = "/bookings",
   cardLinkText = "Read More",
   textOnLeft = false,
   cards = [
@@ -95,7 +100,7 @@ export default ({
               <Subheading>{subheading}</Subheading>
               <HeadingTitle>{headingHtmlComponent}</HeadingTitle>
               <HeadingDescription>{description}</HeadingDescription>
-              <PrimaryLink>
+              <PrimaryLink to={linkUrl}>
                 {linkText} <ArrowRightIcon />
               </PrimaryLink>
             </HeadingInfoContainer>

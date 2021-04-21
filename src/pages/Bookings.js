@@ -1,2 +1,11 @@
 import React from "react";
-export default () => <div>This is the booking page</div>;
+
+import Hero from "components/hero/FullWidthWithImage.js";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+export default () => {
+  return (
+    <AnimationRevealPage>
+      <Hero />
+    </AnimationRevealPage>
+  );
+};

@@ -7,6 +7,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
 import truckExterior from "images/truckExterior.jpg";
 import truckInterior from "images/truckInterior.jpg";
+import trailerInterior from "images/trailerWashout.png";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -64,21 +65,24 @@ export default ({
       durationText: "Save your valuable time",
     },
     {
-      imageSrc: truckExterior,
-      company: "Degreasing",
-      type: "Melbourne",
-      title: "Your vehicle will be presented in pristine condition",
-      durationText: "Save your valuable time",
-    },
-    {
-      imageSrc: truckInterior,
-      company: "Polishing",
+      imageSrc: trailerInterior,
+      company: "Trailer Washout",
       type: "Melbourne",
       title: "Spotless and with the highest hygiene standards",
       durationText: "Save your valuable time",
     },
     {
-      imageSrc: truckExterior,
+      imageSrc:
+        "https://images.unsplash.com/photo-1597088657840-37d3f5d1e1bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+      company: "Degreasing",
+      type: "Melbourne",
+      title: "Your vehicle will be presented in pristine condition",
+      durationText: "Save your valuable time",
+    },
+
+    {
+      imageSrc:
+        "https://images.unsplash.com/photo-1532939163844-547f958e91b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
       company: "Sanitize",
       type: "Melbourne",
       title: "Your vehicle will be presented in pristine condition",
