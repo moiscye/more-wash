@@ -4,12 +4,16 @@ import tw from "twin.macro"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/BackgroundAsImage.js";
-import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
+//import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 import Testimonial2 from "components/testimonials/TwoColumnWithImageAndRating.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
-
+import SliderCard from "components/cards/ThreeColSlider.js";
+import truckExterior from "images/truckExterior.jpg";
+import interiorDetailingImage from "images/interiorDetailing.jpg";
+import trailerWashoutImage from "images/trailerWashout.jpg";
+import executiveSeatsImage from "images/executiveSeats.jpg";
 const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
 const HighlightedText = tw.span`text-primary-500`;
 export default () => {
@@ -29,8 +33,50 @@ export default () => {
         imageDecoratorBlob={true}
         imageSrc="https://s29755.pcdn.co/wp-content/uploads/2018/12/shutterstock_224285314-1.jpg"
       />
+      <SliderCard
+        heading="Services"
+        buttonText="Book now"
+        buttonUrl="/bookings"
+        cards={[
+          {
+            imageSrc: truckExterior,
+            title: "Exterior Cleaning",
+            description: `The detail wash includes a thorough rinsing of the vehicle, a hand brush wash using biodegradable soap, scrubbing the wheels and tires, spraying the frame rails to remove dirt & grease, a final rinse to ensure that all soap is removed...`,
+            rating: "4.8",
+          },
+          {
+            imageSrc: interiorDetailingImage,
+            title: "Interior Cleaning",
+            description:
+              "Our interior detailings entails a complete cleaning of the inside of your vehicles including removing all the trash, vacuuming, wiping down dashboard and instrument panels, using restorative leather products on seats or shampooing the upholstery and carpets.",
+            rating: "5.0",
+          },
 
-      <Portfolio />
+          {
+            imageSrc: trailerWashoutImage,
+            title: "Trailer Wash",
+            description:
+              "First, we rinse the area out and remove any lingering debris, spray down the entire trailer with soap and let it soak for several minutes. Finally, we will high pressure the soap residue off and rinse.",
+            rating: "4.6",
+          },
+          {
+            imageSrc: executiveSeatsImage,
+            title: "Sanitize",
+            description:
+              "Our team will ensure your passenger vehicles are spotless and hygienically sound ready for your next tour. Soiled seats, carpets, and mats will be extraction cleaned, Leather, Vinyl, and Plastics treated and windows left clean and clear.",
+            rating: "5.0",
+          },
+          {
+            imageSrc:
+              "https://images.unsplash.com/photo-1597088657840-37d3f5d1e1bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+            title: "Degreasing",
+            description:
+              "High-pressure washing of earthmoving vehicles, plant equipment, and heavy machinery is a speciality of Shiny Trucks. We can get your equipment ready for a sale, a show, a new operator, or just a regular tune-up.",
+            rating: "4.5",
+          },
+        ]}
+      />
+
       <Testimonial2
         imageRounded={true}
         imageBorder={false}
@@ -41,7 +87,7 @@ export default () => {
             Our Clients <span tw="text-primary-500">Love Us.</span>
           </>
         }
-        description="Our team is passionate about cleaning and detailing comercial vehicles. Customer satisfaction is very important to us so that we are commit to offer exceptional customer service and 100% satisfaction guarantee "
+        description="Our team is passionate about cleaning and detailing comercial vehicles. Customer satisfaction is very important to us so that we are commit to offer exceptional customer service and 100% satisfaction guarantee."
         testimonials={[
           {
             stars: 5,
@@ -94,8 +140,8 @@ export default () => {
             Here are some frequently asked questions about our washing services
             from our loving customers. Should you have any other questions, feel
             free to reach out via the{" "}
-            <Link tw="font-bold text-primary-600 underline " to="contact">
-              contact page
+            <Link tw="font-bold text-primary-600 underline" to="/contact">
+              Contact Us
             </Link>
           </>
         }

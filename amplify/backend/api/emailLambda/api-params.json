@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/send",
+            "lambdaFunction": "emailLambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/send"
+        }
+    ],
+    "resourceName": "emailLambda",
+    "apiName": "emailLambda",
+    "functionArns": [
+        {
+            "lambdaFunction": "emailLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-morewash-dev-123022-authRole",
+        "unAuthRoleName": "amplify-morewash-dev-123022-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "emailLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

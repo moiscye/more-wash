@@ -8,6 +8,7 @@ import truckDriverImage from "images/truckDriver.jpg";
 import washingTruckImage from "images/washingTruck.jpg";
 import interiorDetailingImage from "images/interiorDetailing.jpg";
 import trailerWashoutImage from "images/trailerWashout.jpg";
+import executiveSeatsImage from "images/executiveSeats.jpg";
 export default () => (
   <AnimationRevealPage>
     <Hero
@@ -94,6 +95,40 @@ export default () => (
               <br />
               We will use a blower so it can be completely dry before you add
               the next trip of cargo.
+            </>
+          ),
+          url: "/bookings",
+          urlText: "Book Now",
+        },
+        {
+          imageSrc: executiveSeatsImage,
+
+          title: "Sanitize",
+          description: (
+            <>
+              Our team will ensure your passenger vehicles are spotless and
+              hygienically sound ready for your next tour. Soiled seats,
+              carpets, and mats will be extraction cleaned, Leather, Vinyl, and
+              Plastics treated and windows left clean and clear.
+              <br />
+              <br />
+              Restrooms will be cleaned and deodorized.
+            </>
+          ),
+          url: "/bookings",
+          urlText: "Book Now",
+        },
+        {
+          imageSrc:
+            "https://images.unsplash.com/photo-1597088657840-37d3f5d1e1bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+
+          title: "Degreasing",
+          description: (
+            <>
+              High-pressure washing of earthmoving vehicles, plant equipment,
+              and heavy machinery is a speciality of Shiny Trucks. We can get
+              your equipment ready for a sale, a show, a new operator, or just a
+              regular tune-up.
             </>
           ),
           url: "/bookings",

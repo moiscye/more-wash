@@ -1,26 +1,26 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-morewash-dev-123022-authRole",
-            "UnauthRoleArn": "arn:aws:iam::885542977209:role/amplify-morewash-dev-123022-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::885542977209:role/amplify-morewash-dev-123022-authRole",
-            "Region": "ap-southeast-2",
-            "DeploymentBucketName": "amplify-morewash-dev-123022-deployment",
-            "UnauthRoleName": "amplify-morewash-dev-123022-unauthRole",
-            "StackName": "amplify-morewash-dev-123022",
-            "StackId": "arn:aws:cloudformation:ap-southeast-2:885542977209:stack/amplify-morewash-dev-123022/324ccd70-7c89-11eb-b11c-0a372d2d1b32",
-            "AmplifyAppId": "docuc7lq3x6hs"
-        },
-        "categories": {
-            "auth": {
-                "morewash5d06eed95d06eed9": {}
-            },
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "docuc7lq3x6hs",
-                    "type": "manual"
-                }
-            }
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-morewash-dev-123022-authRole",
+      "UnauthRoleArn": "arn:aws:iam::885542977209:role/amplify-morewash-dev-123022-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::885542977209:role/amplify-morewash-dev-123022-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-morewash-dev-123022-deployment",
+      "UnauthRoleName": "amplify-morewash-dev-123022-unauthRole",
+      "StackName": "amplify-morewash-dev-123022",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:885542977209:stack/amplify-morewash-dev-123022/324ccd70-7c89-11eb-b11c-0a372d2d1b32",
+      "AmplifyAppId": "docuc7lq3x6hs"
+    },
+    "categories": {
+      "auth": {
+        "morewash5d06eed95d06eed9": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "docuc7lq3x6hs",
+          "type": "manual"
         }
+      }
     }
+  }
 }
